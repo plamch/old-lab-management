@@ -1,0 +1,13 @@
+{
+    "name": "services",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "concurrently npm:watch-*",
+        "watch-ui": "cd ui && npm start",
+        "watch-services": "cd services && DEBUG=services:* npm start"
+    },
+    "dependencies": {
+        "concurrently": "^7.0.0"
+    }
+}

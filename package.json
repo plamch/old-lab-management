@@ -3,6 +3,8 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
+        "eslint:check": "eslint --ext .js,.jsx . --report-unused-disable-directives",
+        "eslint:fix": "eslint --ext .js,.jsx . --fix",
         "start": "concurrently npm:watch-*",
         "watch-ui": "cd ui && npm start",
         "watch-services": "cd services && DEBUG=services:* npm start",
@@ -11,6 +13,7 @@
     },
     "dependencies": {
         "concurrently": "^7.0.0",
+        "eslint-config-prettier": "8.4.0",
         "prettier": "2.5.1"
     }
 }

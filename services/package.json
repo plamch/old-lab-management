@@ -8,6 +8,7 @@
     "start-node": "node --experimental-specifier-resolution=node --trace-warnings ./bin/www"
   },
   "dependencies": {
+    "@prisma/client": "3.11.0",
     "cookie-parser": "1.4.6",
     "cors": "2.8.5",
     "debug": "4.3.3",
